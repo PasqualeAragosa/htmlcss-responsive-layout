@@ -14,6 +14,10 @@
     --white: #FFFFFF;
 }
 
+body {
+    font-family: 'Reem Kufi Ink', sans-serif;
+}
+
 .container {
     width: 70%;
     max-width: 1220px;
@@ -31,6 +35,11 @@ img {
 ul {
     list-style-type: none;
 }
+
+.card {
+    /* background-color: var(--white); */
+    border-radius: 15px;
+}
 /* #endregion Common */
 
 /* #region Debug */
@@ -45,8 +54,16 @@ ul {
     flex-wrap: wrap;
 }
 
+.f_column {
+    flex-direction: column;
+}
+
 .f_start {
     justify-content: flex-start;
+}
+
+.f_center {
+    justify-content: center;
 }
 
 .f_end {
@@ -65,8 +82,16 @@ ul {
     width: calc((100% / 12) * 4);
 }
 
+.col_5 {
+    width: calc((100% / 12) * 5);
+}
+
 .col_6 {
     width: 50%;
+}
+
+.col_7 {
+    width: calc((100% / 12) * 7);
 }
 
 .col_8 {
@@ -75,6 +100,14 @@ ul {
 
 .col_12 {
     width: 100%;
+}
+
+.t_center {
+    text-align: center;
+}
+
+.t_left {
+    text-align: left;
 }
 /* #endregion Utilities */
 
@@ -125,12 +158,49 @@ nav span {
     border-radius: 15px;
 }
 
-.debug .planning {
+.planning {
     background-color: var(--primary);
 }
 
-.debug .planning > .container
+.debug .strategic {
+    height: 500px;
+    width: 400px;
+    border: 1px solid black;
+}
 
+.debug .card {
+    height: 500px;
+    width: 400px;
+    border: 1px solid black;
+}
+
+.partner {
+    padding: 2rem 0;
+}
+
+.partner .card {
+    background-color: var(--primary);
+}
+
+.benefit {
+    background-color: var(--primary);
+}
+
+.benefit .card {
+    background-color: var(--white);
+    height: 100%;
+    width: 100%;
+}
+
+.debug .col_7 {
+    background-color: #0084FD;
+    height: 500px;
+}
+
+.debug .col_5 {
+    background-color: #8796a3;
+    height: 500px;
+}
 /* #endregion Main */
 /* #endregion Body */
 
