@@ -77,8 +77,13 @@ ul {
     padding: 1rem;
 }
 
+.col_12 i {
+    display: none;
+}
+
 nav li {
-    padding: 1rem;
+    padding: 1rem 0.75rem;
+    font-size: 12px;
 }
 
 nav span {
@@ -91,3 +96,14 @@ nav span {
 /* #endregion Header */
 /* #endregion Body */
 
+/* #region Query */
+@media screen and (max-width: 768px) {
+    nav li {
+        display: none;
+    }
+
+    .col_12 i {
+        display: block;
+    }
+}
+/* #endregion Query */
