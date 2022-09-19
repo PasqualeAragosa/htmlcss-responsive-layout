@@ -41,6 +41,10 @@ ul {
     display: flex;
 }
 
+.f_wrap {
+    flex-wrap: wrap;
+}
+
 .f_start {
     justify-content: flex-start;
 }
@@ -57,8 +61,16 @@ ul {
     align-items: center;
 }
 
+.col_4 {
+    width: calc((100% / 12) * 4);
+}
+
 .col_6 {
     width: 50%;
+}
+
+.col_8 {
+    width: calc((100% / 12) * 8);
 }
 
 .col_12 {
@@ -92,8 +104,23 @@ nav span {
     padding: 0.5rem 1rem;
     border-radius: 15px;
 }
-
 /* #endregion Header */
+/* #region Main */
+.debug .col_8 {
+    height: 300px;
+    border: 1px solid black;
+    background-color: var(--secondary_light);
+    border-radius: 15px;
+}
+
+.debug .col_4 {
+    height: 300px;
+    border: 1px solid black;
+    background-color: var(--secondary_light);
+    border-radius: 15px;
+}
+
+/* #endregion Main */
 /* #endregion Body */
 
 /* #region Query */
