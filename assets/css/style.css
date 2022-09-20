@@ -75,6 +75,10 @@ ul {
     align-items: center;
 }
 
+.a_end {
+    align-items: flex-end;
+}
+
 .col_4 {
     width: calc((100% / 12) * 4);
 }
